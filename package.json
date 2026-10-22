@@ -1,0 +1,42 @@
+{
+  "name": "mcp-macos-popup",
+  "version": "1.0.0",
+  "description": "MCP server for native macOS popup notifications, with multi-screen support",
+  "main": "server.py",
+  "bin": {
+    "mcp-macos-popup": "bin/mcp-macos-popup.js"
+  },
+  "files": [
+    "bin",
+    "main.js",
+    "popup.html",
+    "preload.js",
+    "server.py",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "python3 server.py",
+    "daemon": "node main.js"
+  },
+  "keywords": [
+    "mcp",
+    "macos",
+    "popup",
+    "notification",
+    "electron",
+    "screen"
+  ],
+  "author": "Wael Bousfira",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vakandi/mcp-macos-popup.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "electron": "^33.0.0"
+  }
+}
